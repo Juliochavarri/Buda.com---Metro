@@ -2,7 +2,7 @@
  Ruta con menor cantidad de estaciones entre dos estaciones de una red de metro.
  
  ## Formato del input de entrada:
-  shortestPath(network,start,end,color)
+  # shortestPath(network,start,end,color)
   
 ## Donde network puede ser:
 
