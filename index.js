@@ -51,7 +51,7 @@ class Graph {
     }
 }
 
-const createGraph = (network,start,end,color) => {
+const shortestPath = (network,start,end,color) => {
     var g = new Graph()
     var node
 
@@ -87,4 +87,4 @@ const createGraph = (network,start,end,color) => {
     return path.join('→')
 }
 
-module.exports = {Graph, createGraph}
+module.exports = {Graph, shortestPath}

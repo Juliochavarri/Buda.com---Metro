@@ -1,4 +1,4 @@
-const {createGraph} = require('../index')
+const {shortestPath} = require('../index')
 
 const network = [
     {
@@ -67,13 +67,13 @@ const network = [
 ]
 
 test('Bus color rojo', () => {
-    expect(createGraph(network,'A','F','red')).toBe('A→B→C→H→F')
+    expect(shortestPath(network,'A','F','red')).toBe('A→B→C→H→F')
 })
 
 test('Bus sin color', () => {
-    expect(createGraph(network,'A','F',null)).toBe('A→B→C→D→E→F')
+    expect(shortestPath(network,'A','F',null)).toBe('A→B→C→D→E→F')
 })
 
 test('Bus color verde', () => {
-    expect(createGraph(network,'A','F','green')).toBe(['A->B->C->D->E->F '],['A->B->C->G->I->F'])
+    expect(shortestPath(network,'A','F','green')).toBe(['A->B->C->D->E->F '],['A->B->C->G->I->F'])
 })
