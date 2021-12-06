@@ -1,0 +1,14 @@
+{
+  "name": "shorterpath",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Julio Chávarri",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^27.4.3"
+  },"type": "module"
+}
